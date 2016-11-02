@@ -16,7 +16,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".CreateActivity"/>
-        <activity android:name=".transformActivity"/>
     </application>
 
 </manifest>
