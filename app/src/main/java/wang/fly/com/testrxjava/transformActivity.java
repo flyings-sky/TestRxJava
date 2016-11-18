@@ -53,17 +53,9 @@ public class transformActivity extends Activity implements View.OnClickListener{
 
     private void flatMap() {
         String str[] = {"JAVA","C","C++"};
-        Observable.just(str).flatMap(new Func1<String[], Observable<String>>() {
-            @Override
-            public Observable<String> call(String[] strings) {
-                return Observable.from(strings);
-            }
-        }).map(new Func1<String, String>() {
-            @Override
-            public String call(String s) {
-                return "Hi,"+s;
-            }
-        }).subscribe(new Subscriber<String>() {
+        Observable.just(str).flatMap(strings -> Observable.from(strings))
+                .map(s -> "Hi,"+s)
+                .subscribe(new Subscriber<String>() {
             @Override
             public void onCompleted() {
                 s += "flatMap->onCompleted:run completed";
@@ -84,13 +76,9 @@ public class transformActivity extends Activity implements View.OnClickListener{
     }
 
     private void map() {
-        Observable.just("java","C","C++").map(new Func1<String, String>() {
-
-            @Override
-            public String call(String s) {
-                return "Hi," + s;
-            }
-        }).subscribe(new Subscriber<String>() {
+        Observable.just("java","C","C++")
+                .map(s -> "Hi,"+s)
+                .subscribe(new Subscriber<String>() {
             @Override
             public void onCompleted() {
                 s += "map->onCompleted:run completed";

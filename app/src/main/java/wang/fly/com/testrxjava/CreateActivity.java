@@ -25,6 +25,7 @@ public class CreateActivity extends Activity implements View.OnClickListener{
         setContentView(R.layout.create_layout);
         findView();
         setEvent();
+        
     }
 
     private void findView() {
