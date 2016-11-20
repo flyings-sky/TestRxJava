@@ -14,7 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:textSize="20sp"
-            android:text="创建操作"
+            android:text="TestMap"
             android:id="@+id/test01"
             android:textColor="#111"
             />
@@ -22,76 +22,78 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:textSize="20sp"
-            android:text="变换操作"
+            android:text="TestFlatAndConcatMap"
             android:id="@+id/test02"
             />
         <Button
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:textSize="20sp"
-            android:text="过滤操作"
+            android:text="TestFilterAndDistinct"
             android:id="@+id/test03"
             />
         <Button
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:textSize="20sp"
-            android:text="结合操作"
+            android:text="TestMergeAndZip"
+            android:id="@+id/test04"
             />
         <Button
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:textSize="20sp"
-            android:text="错误处理操作"
+            android:text="TestMyOperator"
+            android:id="@+id/test05"
             />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:textSize="20sp"
-            android:text="辅助操作"
-            />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:textSize="20sp"
-            android:text="条件和布尔操作"
-            />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:textSize="20sp"
-            android:text="算数和聚合操作"
-            />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:textSize="20sp"
-            android:text="异步操作"
-            />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:textSize="20sp"
-            android:text="连接操作"
-            />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:textSize="20sp"
-            android:text="转换操作"
-            />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:textSize="20sp"
-            android:text="阻塞操作"
-            />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:textSize="20sp"
-            android:text="字符串操作"
-            />
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:textSize="20sp"-->
+            <!--android:text="辅助操作"-->
+            <!--/>-->
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:textSize="20sp"-->
+            <!--android:text="条件和布尔操作"-->
+            <!--/>-->
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:textSize="20sp"-->
+            <!--android:text="算数和聚合操作"-->
+            <!--/>-->
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:textSize="20sp"-->
+            <!--android:text="异步操作"-->
+            <!--/>-->
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:textSize="20sp"-->
+            <!--android:text="连接操作"-->
+            <!--/>-->
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:textSize="20sp"-->
+            <!--android:text="转换操作"-->
+            <!--/>-->
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:textSize="20sp"-->
+            <!--android:text="阻塞操作"-->
+            <!--/>-->
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:textSize="20sp"-->
+            <!--android:text="字符串操作"-->
+            <!--/>-->
 
     </LinearLayout>
 </ScrollView>

@@ -16,6 +16,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".CreateActivity"/>
+        <activity android:name=".TestMap"/>
+        <activity android:name=".TestFlatAndConcatMap"/>
+        <activity android:name=".TestFilterAndDistinct"/>
+        <activity android:name=".TestMergeAndZip"/>
+        <activity android:name=".TestMyOperator"/>
     </application>
 
 </manifest>

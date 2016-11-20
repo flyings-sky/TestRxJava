@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import rx.Observable;
 import rx.Subscriber;
+import rx.functions.Action1;
 import rx.functions.Func1;
 
 /*
@@ -76,6 +77,16 @@ public class transformActivity extends Activity implements View.OnClickListener{
     }
 
     private void map() {
+        Observable.just("java","C","C++")
+                .map(s -> "Hi,"+s)
+                .subscribe(string -> s +=  "map->onNext:"+string+"\n",//onNext()方法
+                        e -> e.printStackTrace(),                     //onError()方法
+                        ()->{                                         //onCompleted()方法
+                            s += "map->onCompleted:run completed";
+                            onShow(s);
+                        });
+
+
         Observable.just("java","C","C++")
                 .map(s -> "Hi,"+s)
                 .subscribe(new Subscriber<String>() {
